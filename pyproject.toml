@@ -1,0 +1,26 @@
+[project]
+name = "demo-model-training"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Subhash Verma", email = "vsubhash817@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "joblib>=1.6.0",
+    "numpy>=2.5.3",
+    "pandas>=3.0.5",
+    "psycopg2-binary>=2.9.12",
+    "python-dotenv>=1.2.3",
+    "scikit-learn>=1.9.0",
+    "streamlit>=1.63.0",
+]
+
+[project.scripts]
+demo-model-training = "demo_model_training:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
